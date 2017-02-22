@@ -13,7 +13,8 @@ export default {
     }
   },
   mounted() {
-    window.um = UE.getEditor(this.$el, {
+    console.log(123123)
+    window.um = UM.getEditor("container", {
         toolbars: toolbars,
         /* 传入配置参数,可配参数列表看umeditor.config.js */
         elementPathEnabled: false,
@@ -21,6 +22,7 @@ export default {
         wordCount:false,
         maximumWords: Infinity,
         serverUrl: '',
+        initialFrameHeight:window.innerHeight -100
     });
   }
 }
