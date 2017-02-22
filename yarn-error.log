@@ -1,0 +1,66 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add babel-core -D
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files (x86)\Git\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Vim\vim74;E:\迅雷下载\nwjs-v0.19.1-win-x64;C:\wamp\bin\mysql\mysql5.6.17;C:\Program Files (x86)\Yarn\bin;C:\Users\mro\AppData\Local\atom\bin;C:\Users\mro\AppData\Roaming\npm;C:\Users\mro\AppData\Local\Yarn\.bin;C:\Program Files (x86)\Microsoft VS Code\bin
+
+Yarn version: 
+  0.18.1
+
+Node version: 
+  7.0.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "UMD",
+    "description": "ueditor-markdown",
+    "author": "iqqq",
+    "private": true,
+    "main": "index.html",
+    "scripts": {
+      "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+      "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    },
+    "dependencies": {
+      "element-thin-ui": "^1.0.2",
+      "element-ui": "^1.0.0",
+      "underscore": "^1.8.3",
+      "vue": "^2.0.1",
+      "vue-resource": "^1.0.3",
+      "vue-router": "^2.1.1"
+    },
+    "devDependencies": {
+      "autoprefixer": "^6.7.4",
+      "babel-core": "^6.23.1",
+      "babel-helper-vue-jsx-merge-props": "^2.0.2",
+      "babel-loader": "^6.3.2",
+      "babel-plugin-syntax-jsx": "^6.18.0",
+      "babel-plugin-transform-object-rest-spread": "^6.23.0",
+      "babel-plugin-transform-vue-jsx": "^3.3.0",
+      "babel-preset-es2015": "^6.22.0",
+      "cross-env": "^3.0.0",
+      "css-loader": "^0.25.0",
+      "extract-text-webpack-plugin": "^2.0.0-rc.3",
+      "file-loader": "^0.9.0",
+      "optimize-css-assets-webpack-plugin": "^1.3.0",
+      "postcss-loader": "^1.3.0",
+      "style-loader": "^0.13.1",
+      "vue-loader": "^10.2.3",
+      "vue-style-loader": "^2.0.0",
+      "vue-template-compiler": "^2.1.10",
+      "webpack": "^2.1.0-beta.25",
+      "webpack-dev-server": "^2.1.0-beta.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EEXIST: file already exists, mkdir 'E:\desktop\ueditor-markdown\node_modules\babel-core'

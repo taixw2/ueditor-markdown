@@ -1,0 +1,49 @@
+{
+  "name": "UMD",
+  "description": "ueditor-markdown",
+  "version": "0.0.1",
+  "author": "iqqq",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "element-thin-ui": "^1.0.2",
+    "element-ui": "^1.0.0",
+    "jquery": "^3.1.1",
+    "underscore": "^1.8.3",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.1.1"
+  },
+  "binary": {
+    "module_name": "",
+    "module_path": "",
+    "host": ""
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.4",
+    "babel-core": "^6.23.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.2",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.3.0",
+    "babel-preset-es2015": "^6.22.0",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "postcss-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "vue-loader": "^10.2.3",
+    "vue-style-loader": "^2.0.0",
+    "vue-template-compiler": "^2.1.10",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  }
+}
