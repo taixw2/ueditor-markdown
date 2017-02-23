@@ -13,8 +13,7 @@
 
 <script type="text/javascript">
 
-import Ueditor from '../components/Ueditor.vue'
-
+import Ueditor from '../components/Ueditor'
   export default {
     data () {
       return {

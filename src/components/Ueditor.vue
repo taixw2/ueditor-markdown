@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import ueditorUserConfig from '../ueditor-user-config'
 export default {
   data() {
     return {
@@ -13,17 +14,7 @@ export default {
     }
   },
   mounted() {
-    console.log(123123)
-    window.um = UM.getEditor("container", {
-        toolbars: toolbars,
-        /* 传入配置参数,可配参数列表看umeditor.config.js */
-        elementPathEnabled: false,
-        autoHeight: false,
-        wordCount:false,
-        maximumWords: Infinity,
-        serverUrl: '',
-        initialFrameHeight:window.innerHeight -100
-    });
+    window.um = UM.getEditor("container", ueditorUserConfig);
   }
 }
 </script>

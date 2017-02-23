@@ -35,6 +35,6 @@ UM.registerUI('save', function( name ){
     } );
 
     //返回该按钮对象后， 该按钮将会被附加到工具栏上
-    return $button;
+    return $button
 
 });

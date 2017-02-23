@@ -7,39 +7,44 @@ import 'element-ui/lib/theme-default/index.css'
 import './assets/style.css'
 import App from './App.vue'
 import routes from './routes'
-import './UM-registUI.js'
+// import './UM-registUI.js'
 
-Vue.use(ElementUI);
-Vue.use(VueRouter);
-Vue.use(VueResource);
+import './ueditor-plugin/table.core'
+import './ueditor-plugin/table.cmds'
 
-var router = new VueRouter({
-    mode: 'hash',
-    base: __dirname,
-    routes,
-    scrollBehavior(to, from, savePosition) {
-        return savePosition ? savePosition : {
-            x: 0,
-            y: 0
-        };
-    }
-});
+Vue.use(ElementUI)
+Vue.use(VueRouter)
+Vue.use(VueResource)
 
-Vue.http.options.root = "/api";
-Vue.http.interceptors.push((request,next)=>{
-    next(response=>{
+const router = new VueRouter({
+  mode: 'hash',
+  base: __dirname,
+  routes,
+  scrollBehavior(to, from, savePosition) {
+    return savePosition
+    // return savePosition ? savePosition : {
+    //   x: 0,
+    //   y: 0,
+    // }
+  },
+})
 
-      return true;
-    });
-});
+Vue.http.options.root = '/api'
+Vue.http.interceptors.push((request, next) => {
+  next(() => true)
+})
 
-const app = new Vue({
-    el: "#app",
+function appStart() {
+  return new Vue({
+    el: '#app',
     router,
     http: {
-        options : {
-          emulateJSON  :  true
-        }
+      options: {
+        emulateJSON: true,
+      },
     },
-    render: h => h(App)
-});
+    render: h => h(App),
+  })
+}
+
+appStart()
