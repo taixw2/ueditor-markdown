@@ -7,7 +7,7 @@ import 'element-ui/lib/theme-default/index.css'
 import './assets/style.css'
 import App from './App.vue'
 import routes from './routes'
-// import './UM-registUI.js'
+import './UM-registUI.js'
 
 import './ueditor-plugin/table.core'
 import './ueditor-plugin/table.cmds'

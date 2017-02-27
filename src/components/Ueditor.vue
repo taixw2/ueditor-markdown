@@ -14,6 +14,7 @@ export default {
     }
   },
   mounted() {
+    console.log(ueditorUserConfig)
     window.um = UM.getEditor("container", ueditorUserConfig);
   }
 }

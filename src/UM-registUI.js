@@ -1,8 +1,8 @@
 /**
  * 创建按钮
  */
-console.log(666)
-UM.registerUI('save', function( name ){
+
+UM.registerUI('inserttable', function( name ){
 
     //该方法里的this指向编辑器实例
 
@@ -16,10 +16,9 @@ UM.registerUI('save', function( name ){
             'icon': 'save',
             'title': me.options.lang === "zh-cn" ? "保存" : "save",
             'click': function(){
-               console.log(name, me)
                 //在这里处理按钮的点击事件
                 //点击之后执行save命令
-                me.execCommand( name );
+                me.execCommand( 'inserttable' );
             }
         });
 
